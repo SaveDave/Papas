@@ -1,0 +1,61 @@
+<!DOCTYPE web-app PUBLIC
+"-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+"http://java.sun.com/dtd/web-app_2_3.dtd" >
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<web-app>
+		<display-name>Archetype Created Web Application</display-name>
+	</web-app>
+	<servlet>
+		<servlet-name>Main</servlet-name>
+		<servlet-class>controller.MainServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Main</servlet-name>
+		<url-pattern></url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Admin</servlet-name>
+		<servlet-class>controller.AdminServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Admin</servlet-name>
+		<url-pattern>/admin</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>DashBoard</servlet-name>
+		<servlet-class>controller.DashBoardServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DashBoard</servlet-name>
+		<url-pattern>/dashBoard</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Confirm</servlet-name>
+		<servlet-class>controller.ConfirmOrder</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Confirm</servlet-name>
+		<url-pattern>/confirm</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>controller.Logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Catalogue</servlet-name>
+		<servlet-class>controller.CatalogueServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Catalogue</servlet-name>
+		<url-pattern>/catalogue</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
