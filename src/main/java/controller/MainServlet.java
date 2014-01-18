@@ -81,7 +81,6 @@ public class MainServlet extends HttpServlet
 			}
 		}
 		System.out.println("TOTAL COST IS: "+ price);
-
 		Order newOrder= new Order(id,name,phone,location,type,quantity,size,addtop,remtop,salespoint,timestamp,price);
 		System.out.println("Order List"+ newOrder);
 		if (v.validate(name,phone,location))

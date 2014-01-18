@@ -21,6 +21,7 @@ public class CatalogueServlet extends HttpServlet
 		list=cm.readCatalogue();
 		req.setAttribute("cat", list);
 		req.getRequestDispatcher("/WEB-INF/catalogue.jsp").forward(req,resp);
+		
 	}
 	
 }
